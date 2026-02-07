@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.jpeg";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer id="download" className="section-padding border-t border-border/30">
