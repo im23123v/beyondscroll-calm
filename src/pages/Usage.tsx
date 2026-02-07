@@ -33,6 +33,8 @@ const PhoneMockup = ({ video, label }: { video: string; label: string }) => (
           loop
           muted
           playsInline
+          preload="none"
+          
           className="w-full h-full object-cover"
         />
       </div>
