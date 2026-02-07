@@ -3,7 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
 
-const links = ["Features", "Science", "Testimonials"];
+const navItems = [
+  { label: "Features", href: "#features" },
+  { label: "Science", href: "#science" },
+  { label: "Usage", href: "/usage" },
+  { label: "Testimonials", href: "#testimonials" },
+];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -19,13 +24,13 @@ const Navbar = () => {
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
+          {navItems.map((item) => (
             <a
-              key={l}
-              href={`#${l.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
             >
-              {l}
+              {item.label}
             </a>
           ))}
           <a
@@ -50,14 +55,14 @@ const Navbar = () => {
             className="md:hidden overflow-hidden bg-background/95 backdrop-blur-xl border-b border-border/30"
           >
             <div className="flex flex-col gap-4 px-6 py-6">
-              {links.map((l) => (
+              {navItems.map((item) => (
                 <a
-                  key={l}
-                  href={`#${l.toLowerCase()}`}
+                  key={item.label}
+                  href={item.href}
                   onClick={() => setOpen(false)}
                   className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
                 >
-                  {l}
+                  {item.label}
                 </a>
               ))}
               <a
