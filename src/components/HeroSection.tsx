@@ -18,8 +18,10 @@ const HeroSection = () => (
           <span className="text-gradient">Start Living.</span>
         </h1>
         <p className="text-muted-foreground text-lg md:text-xl max-w-lg mb-8 leading-relaxed">
-          BeyondScroll helps you break free from doomscrolling with smart triggers,
-          streaks, and community accountability. Reclaim your focus.
+          Tired of being addicted to your phone? You can now breakfree.
+          BeyondScroll helps you redirect to productive tasks, maintains your
+          streak and holds you accountable among your chosen community. With
+          BeyondScroll, smartphone addiction is now a solved problem.
         </p>
         <div className="flex flex-wrap gap-4">
           <a
